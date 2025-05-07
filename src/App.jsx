@@ -1,12 +1,12 @@
-import Hero from "./components/Hero";
-import Narbar from "./components/Navbar";
+import About from "./components/About";
+import Home from "./components/Home";
 
 const App = () => {
   return (
-    <div className="w-full content-center">
-      <Narbar />
-      <Hero />
-    </div>
+    <>
+      <Home />
+      <About />
+    </>
   );
 };
 
