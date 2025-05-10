@@ -1,0 +1,30 @@
+@import "tailwindcss";
+body {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  background-color: #000;
+}
+
+.navbar-link:hover::before {
+  position: absolute;
+  content: "";
+  background: #2cca86;
+  width: 5px;
+  height: 5px;
+  border-radius: 12px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: -8px;
+}
+
+.bg-navbar-3d {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 92, 67, 1) 50%,
+    rgba(0, 0, 0, 1) 100%,
+    transparent
+  );
+  border-radius: 100%;
+}
