@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Conmputer } from "./computer";
+import { Conmputer } from "./Computer";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import ComputerLights from "./ComputerLights";

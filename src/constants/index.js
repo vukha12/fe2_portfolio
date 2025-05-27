@@ -1,3 +1,5 @@
+import project1 from "/assets/projects/project-1.webp";
+
 const navLinks = [
   {
     name: "Home",
@@ -22,33 +24,23 @@ const imageAbout = [
   { name: "about-3", imgPath: "/assets/image/about-3.png" },
   { name: "about-4", imgPath: "/assets/image/about-4.png" },
   { name: "about-5", imgPath: "/assets/image/about-5.png" },
+  { name: "about-6", imgPath: "/assets/image/about-2.png" },
+  { name: "about-7", imgPath: "/assets/image/about-3.png" },
+  { name: "about-8", imgPath: "/assets/image/about-1.png" },
 ];
+const CONTACT = {
+  address: "Thủ Đức, TP. Hồ Chí Minh, Việt Nam",
+  phoneNo: "+ ",
+  email: "22211TT3957@mail.tdc.edu.vn",
+};
 
-const mySkills = [
+const PROJECTS = [
   {
-    name: "icon-html",
-    imgPath: "/assets/skills/html-5.svg",
-    text: "HTML",
-  },
-  {
-    name: "icon-css",
-    imgPath: "/assets/skills/css-3.svg",
-    text: "CSS",
-  },
-  {
-    name: "icon-laravel",
-    imgPath: "/assets/skills/laravel.svg",
-    text: "Laravel",
-  },
-  {
-    name: "icon-react",
-    imgPath: "/assets/skills/react.svg",
-    text: "React",
-  },
-  {
-    name: "icon-tailwind",
-    imgPath: "/assets/skills/tailwind-css.svg",
-    text: "Tailwind",
+    title: "Job Every",
+    image: project1,
+    description:
+      "Giúp người dùng kết nối với nhà tuyển dụng để tìm kiếm việc làm phù hợp với kỹ năng và kinh nghiệm của họ.",
+    technologies: ["NextJS", "Tailwindcss", "MongoDB", "ShadcnUI"],
   },
 ];
-export { navLinks, imageAbout, mySkills };
+export { navLinks, imageAbout, CONTACT, PROJECTS };
