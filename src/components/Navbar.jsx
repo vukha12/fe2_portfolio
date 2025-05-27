@@ -3,8 +3,8 @@ import { navLinks } from "../constants";
 
 const Navbar = () => {
   return (
-    <div className="m-10 border flex fixed">
-      <ul className="flex flex-col space-y-2 text-1xl border p-6 justify-start items-start text-white">
+    <div className="m-10 flex fixed shadow-2xl">
+      <ul className="flex flex-col space-y-2 text-1xl  p-6 justify-start items-start text-white">
         {navLinks.map((item) => (
           <li className=" relative">
             <a

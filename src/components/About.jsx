@@ -1,4 +1,5 @@
 import { imageAbout } from "../constants";
+import Myskills from "./cards/Myskills";
 
 const About = () => {
   return (
@@ -13,10 +14,14 @@ const About = () => {
         <div className=" lg:flex lg:gap-10 gap-5 mt-5">
           {/* Image */}
           <div className="lg:w-5/12">
-            <div className="grid grid-cols-3  gap-5">
+            <div className="grid grid-cols-3 gap-5">
               {imageAbout.map((item, key) => (
                 <div key={key}>
-                  <img src={item.imgPath} alt="" className="rounded-xl" />
+                  <img
+                    src={item.imgPath}
+                    alt={item.name}
+                    className="rounded-xl  shadow-2xl"
+                  />
                 </div>
               ))}
             </div>
@@ -25,7 +30,7 @@ const About = () => {
           {/* Descript */}
           <div className="lg:w-7/12">
             <div className="flex flex-col gap-6 text-1xl italic font-bold lg:mt-0 mt-5 h-full w-full item justify-center lg:items-start items-center">
-              <p> My name is Kha </p>
+              <p> My name is Kha. </p>
               <p>
                 I’m 23 years old and currently a final-year student at Thu Duc
                 College of Technology. I have a strong passion for exploring new
@@ -40,6 +45,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Myskills />
     </section>
   );
 };
